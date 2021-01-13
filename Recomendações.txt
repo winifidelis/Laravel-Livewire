@@ -1,1 +1,39 @@
 utilizar PHP 7.4.4
+
+utilizar uma versão mais recendo do instalador do laravel no computador no curso é usado o 4.0.4
+
+se eu quiser instalar uma versão especificad o laravel usar o comando
+#composer create-project --prefer-dist laravel/laravel marketplace_l6 "6.*"
+"6.*" aqui é uma versão de exemplo
+
+criei o projeot com o comando abaixo
+#laravel new meusGastosApp --jet --stack=livewire
+apertei entrei para seguir com padrão [no]
+
+executar build frontend de desenvolvimento
+#npm i && npm run dev
+
+neste curso eu estou utilizando o sqlite como banco de dados
+então eu configurei i .env e criei o banco de dados com o comando abaixo
+#touch database/database.sqlite
+
+agora eu executo o projeto no navegador e vou ter esse erro
+SQLSTATE[HY000]: General error: 1 no such table: sessions (SQL: select * from "sessions" where "id" = urhZ1OuzUtjV5QZcxE3GdvBJyGmu3VGaI1twjNY1 limit 1)
+
+a sulução é executar
+#php artisan migrate
+
+tudo funcionando, o projeto é para executar redondamente no navegador
+
+agora irei criar models
+#php artisan make:model Expense -mfs
+#php artisan make:model Plan -mfs
+#php artisan make:model Feature -mfs
+#php artisan make:model UserPlan -mfs
+#php artisan make:model Category -mfs
+
+-mfs  cria a migration junto
+     cria uma factory caso eu precise criar dados fakes
+     seed
+
+
