@@ -36,4 +36,41 @@ agora irei criar models
      cria uma factory caso eu precise criar dados fakes
      seed
 
+depois de adicionar tudo dentro dos migrate e model executei
+#php artisan migrate
+
+na Aula 12 iniciai a criação de um componente
+eu tenho o comando #make:livewire como tenho outros comando livewire:******
+
+vamos começar utilizando o comando para criar um componente relacionado aos gastos
+#php artisan make:livewire Expense/ExpenseCreate
+ele vai perguntar se eu quero dar uma estrela no projeto, posso colocar NO
+[No] é por padrão
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
