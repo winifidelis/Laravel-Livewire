@@ -47,6 +47,16 @@ vamos começar utilizando o comando para criar um componente relacionado aos gas
 ele vai perguntar se eu quero dar uma estrela no projeto, posso colocar NO
 [No] é por padrão
 
+para rodas as seed que estão no factory eu executo o comando
+#php artsan db:seed
+ou
+#php artisan migrate:refresh --seed
+
+Aula 17
+#php artisan make:livewire Expense/ExpenseEdit
+
+Aula 18
+#php artisan make:livewire Expense/ExpenseList
 
 
 

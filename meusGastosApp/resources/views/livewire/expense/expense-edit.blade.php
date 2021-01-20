@@ -1,13 +1,13 @@
-<div class="py-4">
+<div>
     <x-slot name="header">
-        Criar registro
+        Atualizar registro
     </x-slot>
 
     @if(session()->has('message'))
         <h3>{{session('message')}}</h3>
     @endif
 
-    <form action="" wire:submit.prevent="createExpense">
+    <form action="" wire:submit.prevent="updateExpense">
         <p>
             <labe>Descrição do registro</labe>
             <input type="text" name="description" class="shadow border-t" wire:model="description" />
@@ -38,6 +38,6 @@
                 <h5>{{$message}}</h5>
             @enderror
         </p>
-        <button type="submit">Criar Registro</button>
+        <button type="submit">Atualizar Registro</button>
     </form>
 </div>
